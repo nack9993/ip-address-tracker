@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  ssr: false,
+  devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
@@ -10,10 +11,5 @@ export default defineNuxtConfig({
   },
   build: {
     transpile: ["@googlemaps/js-api-loader"],
-  },
-  vite: {
-    ssr: {
-      noExternal: ["@googlemaps/js-api-loader"],
-    },
   },
 });
