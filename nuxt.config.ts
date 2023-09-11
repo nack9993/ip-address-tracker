@@ -11,4 +11,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@googlemaps/js-api-loader"],
   },
+  vite: {
+    ssr: {
+      noExternal: ["@googlemaps/js-api-loader"],
+    },
+  },
 });
