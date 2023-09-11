@@ -85,7 +85,7 @@ export default {
     },
     async initMap() {
       const loader = new Loader({
-        apiKey: process.env.GOOGLE_MAPS_API_KEY,
+        apiKey: "AIzaSyBkOE9SiWXP3hCLUz9morYwN07lbtk-dmA",
         version: "weekly",
       });
 
@@ -117,7 +117,8 @@ export default {
     },
   },
   mounted() {
-    // Mounted at this to show the map, in case api expired.
+    // Mounted at this to show the map, in case api expired
+
     this.initMap();
   },
 };
